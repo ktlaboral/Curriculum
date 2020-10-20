@@ -254,6 +254,14 @@ footer p {
     border-top-left-radius: 15px;
 }
 
+footer a {
+    color: var(--naranja);
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: rgb(146, 90, 52);
+}
 
 
 @media(max-width: 1024px) {
