@@ -1,6 +1,15 @@
+/* Variables */
+
+:root {
+    --naranja: rgb(194, 111, 16);
+}
+
+/* Variables */
+
+
 .active a {
 
-    color: orange!important;
+    color: var(--naranja)!important;
 
 }
 
@@ -9,7 +18,7 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 1px 6px 1px orange;
+    box-shadow: 0 1px 6px 1px var(--naranja);
 }
 
 #vista_principal {
@@ -46,7 +55,6 @@
 }
 
 #circulo_perfil {
-    
     border: 1px solid white;
     border-radius: 50%;
     position: absolute;
@@ -57,4 +65,57 @@
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0.562);
 }
+
+.desarrollador {
+
+    position: absolute;
+    bottom: 70px;
+    /* bottom 50px en movil */
+    box-shadow: 1px 1px 5px 2px white;
+    left: calc(50% - 188.34px/2);
+    color: black;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    font-style: italic;
+}
+
+.padre_boton {
+
+    background: linear-gradient(50deg, var(--naranja), red);
+    border-radius: 15px;
+    padding: 2px;
+    cursor: pointer;
+    transition: .35s all;
+    color: white;
+    min-width: 110px;
+
+}
+
+.padre_boton a {
+    color: inherit;
+    text-decoration: inherit;
+    width: 100%;
+    display: inline-block;
+}
+
+.boton {
+    background: linear-gradient(50deg, var(--naranja), red);
+    border-radius: 15px;
+    padding: 10px;
+    top: 0;
+    transition: .35s all;
+}
+
+.boton a {
+    color: inherit;
+    text-decoration: inherit;
+    display: inline-block;
+}
+
+.padre_boton:hover {
+    transform: scale(1.1);
+}
+
+
 
