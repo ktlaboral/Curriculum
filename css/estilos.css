@@ -263,6 +263,34 @@ footer a:hover {
     color: rgb(146, 90, 52);
 }
 
+.boton_modal {
+    background: linear-gradient(50deg, var(--naranja), red);
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 15px;
+    color: white;
+    transition: all .35s;
+}
+
+.boton_modal:hover {
+    text-decoration: none;
+    color: white;
+    transform: scale(1.1);
+}
+
+.boton_modal i {
+    font-size: 30px;
+}
+
+.boton_modal .whatsapp {
+    color: white;
+}
+
+.boton_modal .correo {
+    color: white;
+}
+
+
 
 @media(max-width: 1024px) {
 
