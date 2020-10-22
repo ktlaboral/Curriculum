@@ -290,12 +290,58 @@ footer a:hover {
     color: white;
 }
 
+.nav_icon {
+    font-size: 20px;
+    position: fixed;
+    right: 0;  
+    z-index: 900;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transition: all 250ms;
+}
+
+.nav_icon:hover {
+    text-decoration: none;
+    transform: scale(1.05);
+    padding-right: 20px;
+    border: 1px solid gray;
+}
+
+#nav_whatsapp {
+    color: white;
+    background: #54cc61;
+    top: 66px;
+}
+
+#nav_linkedin {
+    color: white;
+    background: #0a66c2;
+    top: 108px;
+}
+
+#nav_mail {
+    color: white;
+    background: gray;
+    top: 148px;
+}
 
 
 @media(max-width: 1024px) {
 
     .desarrollador {
         bottom: 50px;
+    }
+
+    .nav_icon {
+        font-size: 18px;
+        position: fixed;
+        right: 0;  
+        z-index: 900;
+        padding: 8px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        transition: all 250ms;
     }
 
 }
